@@ -25,7 +25,7 @@ public class List_Movie extends AppCompatActivity {
         description = findViewById(R.id.tvDescri);
         watch_on = findViewById(R.id.tvWatchOn);
         theatre = findViewById(R.id.tvThreatre);
-        //ratingBar = findViewById(R.id.ratingBar);
+        ratingBar = findViewById(R.id.ratingBar);
 
         //get intent
         Intent intent = getIntent();
@@ -36,7 +36,7 @@ public class List_Movie extends AppCompatActivity {
         String Description = intent.getStringExtra("description");
         String Watched_on = intent.getStringExtra("watch_on");
         String In_theatre = intent.getStringExtra("theatre");
-
+        int ratings = intent.getIntExtra("ratings", -1);
 
 
         //rated
@@ -65,6 +65,6 @@ public class List_Movie extends AppCompatActivity {
         description.setText(Description);
         watch_on.setText("Watch on: " +Watched_on);
         theatre.setText("In Theatre: "+In_theatre);
-
+        ratingBar.setRating(ratings);
     }
 }

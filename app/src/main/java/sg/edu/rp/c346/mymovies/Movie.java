@@ -8,9 +8,9 @@ public class Movie {
     private String watched_on;
     private String in_theatre;
     private String description;
-    //private String ratings;
+    private int ratings;
 
-    public Movie(String title, String year, String rated, String genre, String watched_on, String in_theatre, String description) {
+    public Movie(String title, String year, String rated, String genre, String watched_on, String in_theatre, String description,int ratings) {
         this.title = title;
         this.year = year;
         this.rated = rated;
@@ -18,7 +18,7 @@ public class Movie {
         this.watched_on = watched_on;
         this.in_theatre = in_theatre;
         this.description = description;
-        //this.ratings = ratings;
+        this.ratings = ratings;
     }
 
     public String getTitle() {
@@ -57,13 +57,13 @@ public class Movie {
         return watched_on;
     }
 
-//    public String getRatings() {
-//        return ratings;
-//    }
-//
-//    public void setRatings(String ratings) {
-//        this.ratings = ratings;
-//    }
+    public int getRatings() {
+        return ratings;
+    }
+
+    public void setRatings(int ratings) {
+        this.ratings = ratings;
+    }
 
     public void setWatched_on(String watched_on) {
         this.watched_on = watched_on;
@@ -84,4 +84,6 @@ public class Movie {
     public void setDescription(String description) {
         this.description = description;
     }
+
+
 }

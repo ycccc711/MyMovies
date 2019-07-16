@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         alMovie = new ArrayList<>();
 
         //objects
-        Movie mv1 = new Movie("The Avengers","2012","pg13","Action | Sci-Fi","15/11/2014","Golden Village - Bishan","Nick Fury of S.H.I.E.L.D. assembles a team of superheroes to save the planet from Loki and his army");
-        Movie mv2 = new Movie("Planes","2013","pg","Animation | Comedy","15/5/2015","Cathay - AMK Hub","A crop-dusting plane with a fear of heights lives his dream of competing in a famous around-the-world aerial race");
+        Movie mv1 = new Movie("The Avengers","2012","pg13","Action | Sci-Fi","15/11/2014","Golden Village - Bishan","Nick Fury of S.H.I.E.L.D. assembles a team of superheroes to save the planet from Loki and his army",1);
+        Movie mv2 = new Movie("Planes","2013","pg","Animation | Comedy","15/5/2015","Cathay - AMK Hub","A crop-dusting plane with a fear of heights lives his dream of competing in a famous around-the-world aerial race",2);
 
         //add objects to arrayList
         alMovie.add(mv1);
