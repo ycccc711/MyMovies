@@ -7,7 +7,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,14 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("year", alMovie.get(position).getYear());
                 intent.putExtra("rated", alMovie.get(position).getRated());
                 intent.putExtra("genre", alMovie.get(position).getGenre());
-                intent.putExtra("watch_on", alMovie.get(position).getWatched_on());
                 intent.putExtra("theatre", alMovie.get(position).getIn_theatre());
                 intent.putExtra("description", alMovie.get(position).getDescription());
+                //intent.putExtra("rating",alMovie.get(position).getRatings());
                 startActivity(intent);
             }
         });
-
-
-
     }
 }

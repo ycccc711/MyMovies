@@ -5,12 +5,14 @@ import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 public class List_Movie extends AppCompatActivity {
 
     ImageView ivMovie;
     TextView title, year_genre,description,watch_on,theatre;
+    RatingBar ratingBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class List_Movie extends AppCompatActivity {
         description = findViewById(R.id.tvDescri);
         watch_on = findViewById(R.id.tvWatchOn);
         theatre = findViewById(R.id.tvThreatre);
+        //ratingBar = findViewById(R.id.ratingBar);
 
         //get intent
         Intent intent = getIntent();
@@ -33,6 +36,7 @@ public class List_Movie extends AppCompatActivity {
         String Description = intent.getStringExtra("description");
         String Watched_on = intent.getStringExtra("watch_on");
         String In_theatre = intent.getStringExtra("theatre");
+
 
 
         //rated
